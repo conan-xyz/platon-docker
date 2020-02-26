@@ -3,7 +3,7 @@ services:
     platon:
         build:
             context: ./
-            dockerfile: Dockerfile1
+            dockerfile: Dockerfile
         volumes:
           - /platon-node/data:/root/platon-node/data
         ports:
