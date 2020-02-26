@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+    platon:
+        build:
+            context: ./
+            dockerfile: Dockerfile1
+        volumes:
+          - /platon-node/data:/root/platon-node/data
+        ports:
+            - 16789:16789
+            - 127.0.0.1:6789:6789
+        container_name: "platon-node"
